@@ -55,3 +55,5 @@
 | 5.3 | Correções em todos os possíveis problemas encontrados | 40min |
 
 -------------------------------------
+### Previsualização do Projeto:	
+<img src="https://github.com/micheldslive/GamaXP39-Desafio01/blob/master/demo/preview.gif" width="700"   />
