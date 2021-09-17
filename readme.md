@@ -1,4 +1,6 @@
-# GAMA ACADEMY - DESAFIO INDIVIDUAL 1 <img src="https://github.com/micheldslive/desafio01-XP39/blob/master/demo/logo.png" width="100" />
+<img src="https://github.com/micheldslive/GamaXP39-Desafio01/blob/master/demo/gama-logo.png" width="350" />
+
+# GAMA XP39 - DESAFIO INDIVIDUAL 1
 
 ## CASCA GROSSA STORE
 
