@@ -1,4 +1,4 @@
-// MOSTRAR / OCULTAR MENU NO SCROLL
+// MOSTRAR / OCULTAR MENU STICKY NO SCROLL
 var lastScrollTop = 0;
 $(window).scroll(function (event) {
   var currentScrollTop = $(this).scrollTop(),
