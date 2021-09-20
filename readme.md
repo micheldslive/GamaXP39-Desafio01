@@ -8,7 +8,7 @@
 
 | Estória | Descrição | Estimativa |
 | :---: | --- | :---: |
-| 1.1 | Criação dos arquivos `index.html`, `products.html`, `quem-somos.html` e `contato.html` | 5min |
+| 1.1 | Criação dos arquivos `index.html`, `produto.html`, `quem-somos.html` e `contato.html` | 5min |
 | 1.2 | Criação do diretório: `assets` e subdiretórios: `css`, `js` e `images` | 5min |
 | 1.3 | Criação do arquivos: `main.css` e `main.js` | 5min |
 | 1.4 | Coletar, editar e adicionar imagens dos `Produtos`, `Logos` e `Icones` ao diretório images | 1h |
@@ -30,7 +30,7 @@
 | 2.9 | Teste de responsividade, Criação de funcionalidades, ajudes e reajustes na estilização | 3h |
 
 ---------------------------
-### Sprint 3 - Criação da página de Detalhe dos Produtos `products.html`:
+### Sprint 3 - Criação da página de Detalhe do Produto `produto.html`:
 
 | Estória | Descrição | Estimativa |
 | :---: | --- | :---: |
@@ -57,3 +57,6 @@
 -------------------------------------
 ### Pré-visualização do Projeto:	
 <img src="https://github.com/micheldslive/GamaXP39-Desafio01/blob/master/demo/preview.gif" width="700"   />
+
+-------------------------------------
+UI do Projeto: https://drive.google.com/drive/folders/1O4_VSHReYFqMAiy2yPtXg9NVU2xFUK2s?usp=sharing
