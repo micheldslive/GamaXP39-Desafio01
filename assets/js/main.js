@@ -1,3 +1,21 @@
+// SEARCH HOME PAGE
+$(document).on("click", "#searchBtn", function () {
+  var search = $("#search").val();
+  $(".product").css("display", "");
+  if (search != "") {
+    var title = $("h4.name a");
+    title.each(function () {
+      var string = $(this).html(),
+        result = string.includes(search);
+
+      if (!result) {
+        var divClass = $(this).attr("data-id");
+        $("." + divClass).css("display", "none");
+      }
+    });
+  }
+});
+
 // MOSTRAR / OCULTAR MENU STICKY NO SCROLL
 var lastScrollTop = 0;
 $(window).scroll(function (event) {
