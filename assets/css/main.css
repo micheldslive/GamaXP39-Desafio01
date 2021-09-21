@@ -33,7 +33,7 @@ html {
 
 
 body {
-    font-family: 'Roboto Slab', serif !important;
+    font-family: 'Roboto Slab', serif;
     font-size: 16px;
 }
 
@@ -51,7 +51,7 @@ body.overflow {
 }
 
 *:focus, *:visited, *:active {
-    outline: none !important;
+    outline: none;
 }
 
 ul li {
@@ -285,7 +285,7 @@ header {
     }
     
     .toggle .icon2 {
-        display: none !important;
+        display: none;
     }
     
     .toggle .icon3 {
@@ -383,7 +383,7 @@ a.burger {
 
 @media screen and (max-width: 992px) {
     .products-head .products-view {
-        display: none !important;
+        display: none;
     }
 }
 
