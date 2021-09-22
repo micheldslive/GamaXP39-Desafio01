@@ -9,25 +9,10 @@ $(document).on("click", ".filters a", function () {
   var filterValue = $(this).attr("data-filter");
   $(".filters a").removeClass("active");
   $(this).addClass("active");
-  $("#all").isotope({ filter: filterValue });
-});
-
-// SEARCH HOME PAGE
-$(document).on("click", "#searchBtn", function () {
-  var search = $("#search").val();
-  $(".product").css("display", "");
-  if (search != "") {
-    var title = $("h4.name a");
-    title.each(function () {
-      var string = $(this).html(),
-        result = string.includes(search);
-
-      if (!result) {
-        var divClass = $(this).attr("data-id");
-        $("." + divClass).css("display", "none");
-      }
-    });
-  }
+  var grid = $("#all").isotope({ filter: filterValue });
+  var iso = grid.data("isotope");
+  var filterCount = $(".products-count .count");
+  filterCount.text(iso.filteredItems.length);
 });
 
 // MOSTRAR / OCULTAR MENU STICKY NO SCROLL
