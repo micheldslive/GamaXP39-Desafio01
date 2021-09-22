@@ -1,10 +1,15 @@
 //FILTRAR CATEGORIAS
+$(function () {
+  setTimeout(function () {
+    $(".filters a.active").click();
+  }, 1000);
+});
+
 $(document).on("click", ".filters a", function () {
-  var $grid = $("#all");
   var filterValue = $(this).attr("data-filter");
   $(".filters a").removeClass("active");
   $(this).addClass("active");
-  $grid.isotope({ filter: filterValue });
+  $("#all").isotope({ filter: filterValue });
 });
 
 // SEARCH HOME PAGE
@@ -48,6 +53,7 @@ $(document).on("click", ".three-p, .four-p", function () {
     $(".three-p, .four-p").removeClass("selected");
     $(this).addClass("selected");
     $(".product").toggleClass("col-md-4 col-lg-3");
+    $(".filters a.active").click();
   }
 });
 
