@@ -1,3 +1,12 @@
+//FILTRAR CATEGORIAS
+$(document).on("click", ".filters a", function () {
+  var $grid = $("#all");
+  var filterValue = $(this).attr("data-filter");
+  $(".filters a").removeClass("active");
+  $(this).addClass("active");
+  $grid.isotope({ filter: filterValue });
+});
+
 // SEARCH HOME PAGE
 $(document).on("click", "#searchBtn", function () {
   var search = $("#search").val();

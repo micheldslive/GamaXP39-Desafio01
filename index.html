@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="./assets/js/main.js"></script>
   </head>
   <body>
@@ -76,7 +77,13 @@
       <div class="products-head">
         <section class="d-flex align-items-center">
           <div class="products-count"><span>12</span> produtos encontrados.</div>
-          <div class="products-view d-flex">
+          <div class="filters">
+            <span>Categorias: </span>
+            <a data-filter="*" class="active">Todos</a>
+            <a data-filter=".barba">Barba</a>
+            <a data-filter=".cabelo">Cabelo</a>
+          </div>
+          <div class="products-view">
             <div class="three-p selected">
               <span class="icon"></span>
               <span class="icon"></span>
@@ -93,8 +100,8 @@
       </div>
       <div class="all-products">
         <section>
-          <div class="row">
-            <div class="product 01 col-md-4 col-sm-6">
+          <div class="row" id="all">
+            <div class="product 01 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Shaving gel Mercado Barbeiro Signature">
@@ -119,7 +126,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 02 col-md-4 col-sm-6">
+            <div class="product 02 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Bico Borrifador Aplicador de Toppik">
@@ -144,7 +151,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 03 col-md-4 col-sm-6">
+            <div class="product 03 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Toppik Black 27.5G">
@@ -169,7 +176,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 04 col-md-4 col-sm-6">
+            <div class="product 04 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Beard Balm - Balm para a Barba">
@@ -194,7 +201,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 05 col-md-4 col-sm-6">
+            <div class="product 05 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Bead Oil - Oléo para Barba Kraft Men Care 30ml">
@@ -219,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 06 col-md-4 col-sm-6">
+            <div class="product 06 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Tônico capilar Big Barber 120ml Blend de crescimento">
@@ -244,7 +251,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 07 col-md-4 col-sm-6">
+            <div class="product 07 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Gel de Barbear Shave Design Ferramentas de Barbeiro 1kg">
@@ -269,7 +276,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 08 col-md-4 col-sm-6">
+            <div class="product 08 col-md-4 col-sm-6 barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Kit Para Barba – Gel de Barbear 1kg + Pós-Barba 500g + Óleo Para Barba 30ml">
@@ -294,7 +301,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 09 col-md-4 col-sm-6">
+            <div class="product 09 col-md-4 col-sm-6 cabelo">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Fixador De Cabelo Grooming Peaky Blinders">
@@ -302,7 +309,7 @@
                   </a>
                 </div>
                 <div class="item-description">
-                  <span class="category">CABELO / BARBA</span>
+                  <span class="category">CABELO</span>
                   <h4 class="name">
                     <a href="produto.html" data-id="09">Fixador De Cabelo Grooming Peaky Blinders</a>
                   </h4>
@@ -319,7 +326,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 10 col-md-4 col-sm-6">
+            <div class="product 10 col-md-4 col-sm-6 cabelo barba">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Creme De Barbear Militaer 500gr">
@@ -327,7 +334,7 @@
                   </a>
                 </div>
                 <div class="item-description">
-                  <span class="category">CABELO / BARBA</span>
+                  <span class="category">BARBA / CABELO</span>
                   <h4 class="name">
                     <a href="produto.html" data-id="10">Creme De Barbear Militaer 500gr</a>
                   </h4>
@@ -344,7 +351,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 11 col-md-4 col-sm-6">
+            <div class="product 11 col-md-4 col-sm-6 cabelo">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Condicionador Masculino Keune Essential 250ml Formula Única">
@@ -352,7 +359,7 @@
                   </a>
                 </div>
                 <div class="item-description">
-                  <span class="category">CABELO / BARBA</span>
+                  <span class="category">CABELO</span>
                   <h4 class="name">
                     <a href="produto.html" data-id="11">Condicionador Masculino Keune Essential 250ml Formula Única</a>
                   </h4>
@@ -369,7 +376,7 @@
                 </div>
               </div>
             </div>
-            <div class="product 12 col-md-4 col-sm-6">
+            <div class="product 12 col-md-4 col-sm-6 cabelo">
               <div class="product-container">
                 <div class="item-image">
                   <a href="produto.html" title="Fixador De Cabelo Hairspray Don Alcides Freak Show">
@@ -377,7 +384,7 @@
                   </a>
                 </div>
                 <div class="item-description">
-                  <span class="category">CABELO / BARBA</span>
+                  <span class="category">CABELO</span>
                   <h4 class="name">
                     <a href="produto.html" data-id="12">Fixador De Cabelo Hairspray Don Alcides Freak Show</a>
                   </h4>
